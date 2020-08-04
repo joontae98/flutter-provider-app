@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,6 +30,9 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final counter = Provider.of<Counter>(context);//변수 설정
+
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
@@ -46,11 +49,13 @@ class MyHomePage extends StatelessWidget {
                 style: Theme.of(context).textTheme.headline4,
               ),
             ),
+//          Text(counter.getCount().toString(),style: Theme.of(context).textTheme.headline4,),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => Provider.of<Counter>(context, listen: false).incrementCount(),
+        //onPressed: () => Provider.of<Counter>(context, listen: false).incrementCount(),
+        onPressed: () => counter.incrementCount(),
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
