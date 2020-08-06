@@ -1,4 +1,4 @@
-# flutterproviderapp
+# Flutter Provider App
 
 A new Flutter application.
 
