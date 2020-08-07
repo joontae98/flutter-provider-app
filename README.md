@@ -1,6 +1,5 @@
 # Flutter Provider App
-
-A new Flutter application.
+**Provider** 패턴을 이해하기 위한 **App**
 
 ## Getting Started
 
