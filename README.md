@@ -1,5 +1,5 @@
 # Flutter Provider App
-**Provider pattern**을 이해하기 위한 **App**.
+**Provider pattern**을 이해하기 위한 **App**
 ### Provider
 **provider** 는 Google IO에서 추천되어 가장 큰 주목을 받는 디자인 패턴이다. 이것은 원래 구글에서 만든 것이 아니지만 구글에서 공식적으로 추천하였다.   
 이전 Google IO에서는 **BLoC** 패턴 사용을 권장하였지만 단순한 로직을 구현하기 위해서도 많은 클래스를 만들어야 하므로 사람들이 어려워했다. 반면 **Provider** 패턴은 데이터 공유나 로직의 분리를 좀 더 간단히 할 수 있다.   
